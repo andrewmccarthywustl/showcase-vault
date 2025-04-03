@@ -1,0 +1,223 @@
+{
+  "main": {
+    "id": "5324373015726ba8",
+    "type": "split",
+    "children": [
+      {
+        "id": "e55fd34749754fa2",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d98590222d32af87",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "home.md",
+                "mode": "preview",
+                "source": true,
+                "backlinks": false
+              },
+              "pinned": true,
+              "icon": "lucide-file",
+              "title": "home"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "bc658c0cc072bd4b",
+    "type": "split",
+    "children": [
+      {
+        "id": "49641a34ceb53b07",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "39846b72e5275128",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "901ef2ed00ae2c9e",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "1a4f7e1472f46ce8",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "328f1e03c984bc2d",
+    "type": "split",
+    "children": [
+      {
+        "id": "cd48977b2d9b4025",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "827ab0e9dc3bae46",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "home.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for home"
+            }
+          },
+          {
+            "id": "d57b3f8d979acc51",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
+            }
+          },
+          {
+            "id": "ec562a2a9ae7710a",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "6e572003b5d1bc4b",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": "",
+                "file": "home.md"
+              },
+              "icon": "lucide-list",
+              "title": "Outline"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "workspaces:Manage workspace layouts": false,
+      "homepage:Open homepage": false
+    }
+  },
+  "active": "d98590222d32af87",
+  "lastOpenFiles": [
+    "semester/class/table-of-contents-class.md",
+    "home.md",
+    "infinity-note.md",
+    "attachments/personal-website-icon.svg",
+    "attachments/fin-451-icon.svg",
+    "attachments/fin-441-icon.svg",
+    "attachments/cse-412-icon.svg",
+    "attachments/cse-417-icon.svg",
+    "goals.md",
+    "journal/table-of-contents-journal.md",
+    "media-list.md",
+    "obsidian-config-todo.md",
+    "journal/journal-entries/wip-2025-03-31-.md",
+    "journal/journal-entries/2025-03-31-name-of-entry.md",
+    "semester/class/lecture-notes/lecture-note-example.pdf",
+    "attachments/class-icon.svg",
+    "attachments/ai-icon.svg",
+    "projects/table-of-contents-projects.md",
+    "attachments/chat-gpt-icon.svg",
+    "attachments/SVG/chat-gpt-icon.svg",
+    "semester/math-429/lecture-notes/test.md",
+    "attachments/SVG/Asset 66.svg",
+    "attachments/SVG",
+    "semester/math-429/lecture-notes/2025-03-31-inequalities-orthonormality.pdf",
+    "semester/math-429/homework/hw-3.pdf",
+    "semester/math-429/homework/hw-2.pdf",
+    "semester/math-429/homework/hw-1.pdf",
+    "projects/mcp/mcp-to-do.md",
+    "projects/mcp/mcp-resources.md",
+    "projects/mcp/mcp-project-description.md",
+    "2025-spr/cse-412/table-of-contents-cse-412.md",
+    "2025-spr/cse-412/lecture-notes/17-mdp-search-trees.pdf",
+    "ai/prompts/media-prompts.md",
+    "ai/prompts/image-gen-prompts.md",
+    "ai/table-of-contents-ai.md",
+    "context-about-myself.md",
+    "semester/math-429/table-of-contents-math-429.md",
+    "semester/math-429/homework/hw-8.pdf",
+    "2025-spr/cse-417/table-of-contents-cse-417.md",
+    "2025-spr/math-429/homework/hw8.pdf",
+    "semester/math-429/homework/hw-7.pdf",
+    "semester/fin-451/table-of-contents-fin-451.md",
+    "semester/fin-441/table-of-contents-fin-441.md",
+    "cs/table-of-contents-cs.md",
+    "cs/cs-courses/command-line-course.md"
+  ]
+}

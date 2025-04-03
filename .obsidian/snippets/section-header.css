@@ -1,0 +1,29 @@
+/*
+Made by Elevict
+
+Date: Last updated July 30th, 2024
+Description: A series of gradient headers
+*/
+
+/* ============== Gradient CSS Classes ============== */
+:root {
+  /* Gradient Callouts */
+  --light-primary: #ffffff;
+}
+
+.section-header {
+  font-size: 22pt !important;
+  font-family: "Trebuchet MS" !important;
+  text-align: left;
+  padding: 10px 0 16px 0;
+  position: relative;
+  color: var(--light-primary) !important;
+}
+.page-title {
+  font-size: 18pt !important;
+  font-family: "Trebuchet MS" !important;
+  text-align: left;
+  padding: 10px 0 16px 0;
+  position: relative;
+  color: var(--light-primary) !important;
+}

@@ -1,0 +1,81 @@
+/* Nav Bar Callout Snippet - Hide pencil icon and title */
+.root {
+  --background-color: #000000;
+  --border-color: #202020;
+}
+
+.callout[data-callout="nav-bar"] {
+  display: block;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+.callout[data-callout="nav-bar"] .callout-title {
+  display: none; /* This hides the entire title bar including the pencil icon and text */
+}
+
+.callout[data-callout="nav-bar"] .callout-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  padding: 10px;
+  border-top: 2px solid var(--border-color);
+  border-bottom: 2px solid var(--border-color);
+  border-radius: 0px;
+}
+
+.callout[data-callout="nav-bar"] p {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin: 0;
+}
+
+.callout[data-callout="nav-bar"] a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: transform 0.2s ease;
+}
+
+.callout[data-callout="nav-bar"] a:hover {
+  transform: scale(1.1);
+}
+
+.callout[data-callout="nav-bar"] img,
+.callout[data-callout="nav-bar"] svg {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+.external-link {
+  background-image: none;
+  padding-right: 0px;
+}
+
+/* Prevent image preview hover effects in nav bar */
+.callout[data-callout="nav-bar"] a:hover .image-embed,
+.callout[data-callout="nav-bar"] a:hover img {
+  cursor: pointer !important;
+}
+
+/* Disable the magnifying glass icon */
+.callout[data-callout="nav-bar"] a .image-embed::after,
+.callout[data-callout="nav-bar"] a:hover .image-embed::after {
+  display: none !important;
+}
+
+/* Ensure no background or other decorations appear */
+.callout[data-callout="nav-bar"] .image-embed {
+  background-color: transparent !important;
+}
+
+/* Prevent any zoom or preview behaviors */
+.callout[data-callout="nav-bar"] .image-embed:hover {
+  transform: none;
+}

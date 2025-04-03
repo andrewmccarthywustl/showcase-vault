@@ -1,0 +1,24 @@
+{
+  "cssTheme": "andr3wm",
+  "baseFontSize": 20,
+  "enabledCssSnippets": [
+    "dashboard",
+    "andr3wm-dashboard",
+    "mcl-multicol",
+    "combined-snippets",
+    "mcl-wide",
+    "Gradient Callouts",
+    "Images Adjustments",
+    "Mathematics Callouts",
+    "hide-props",
+    "hide-props-title",
+    "Gradient Headers",
+    "Colored Sidebar Items",
+    "navbar",
+    "section-header",
+    "colored-sidebar-items",
+    "colored-sidebar",
+    "home-tasks"
+  ],
+  "accentColor": "#50aaa8"
+}

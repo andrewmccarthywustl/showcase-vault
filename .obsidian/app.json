@@ -1,0 +1,17 @@
+{
+  "tabSize": 2,
+  "attachmentFolderPath": "./attachments",
+  "showLineNumber": true,
+  "pdfExportSettings": {
+    "includeName": true,
+    "pageSize": "Letter",
+    "landscape": false,
+    "margin": "0",
+    "downscalePercent": 100
+  },
+  "readableLineLength": true,
+  "foldHeading": true,
+  "alwaysUpdateLinks": true,
+  "livePreview": false,
+  "defaultViewMode": "preview"
+}

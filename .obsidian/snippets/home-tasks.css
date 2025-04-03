@@ -1,0 +1,66 @@
+/* Home Tasks Styling for Infinity Note Tasks */
+.home-tasks .dataview .contains-task-list {
+  background-color: #1a1a1a;
+  border-radius: 10px;
+  padding: 0;
+  margin: 15px 0;
+  list-style-type: none;
+}
+
+/* Individual task list items */
+.home-tasks .dataview .task-list-item {
+  display: flex;
+  align-items: center;
+  padding: 15px 20px;
+  margin: 0;
+  background-color: #020202;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif;
+}
+
+/* Checkbox styling */
+.home-tasks .dataview .task-list-item-checkbox {
+  margin-right: 30px;
+  margin-left: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background-color: transparent;
+  border-radius: 3px;
+  appearance: none;
+  -webkit-appearance: none;
+  width: 16px;
+  height: 16px;
+  position: relative;
+  cursor: pointer;
+}
+
+.home-tasks .dataview .task-list-item-checkbox:hover {
+  background-color: white;
+}
+
+/* Timestamp styling */
+.home-tasks .dataview .task-list-item span {
+  display: inline-block;
+  font-size: 0.95em;
+}
+
+/* Style for date timestamps in tasks */
+.home-tasks .dataview .task-list-item span:first-of-type {
+  color: #ffffff;
+}
+
+/* Hover effect for tasks */
+.home-tasks .dataview .task-list-item:hover {
+  background-color: #252525;
+  transition: background-color 0.2s ease;
+}
+
+/* Add title to the task section */
+.home-tasks .dataview::before {
+  display: block;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}

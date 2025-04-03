@@ -1,0 +1,1 @@
+- [ ] data structure inspired by Andrej Kaparthy, works well in conjunction with iphone shortcuts rather than obsidian mobile

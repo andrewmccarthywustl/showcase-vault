@@ -1,0 +1,785 @@
+/*------------------------------------------------------------------------------
+          Obsidian Colored Folders and Files - April 1, 2025
+          Based on CyanVoxel's Colored Sidebar Items v2.0.0
+
+          Customized for your specific folder structure with proper
+          coloring for both folders and root-level files.
+------------------------------------------------------------------------------*/
+
+:root {
+  /* ================================ Colors ================================ */
+  /* Folders */
+  --spr-2025-color: #ff5252;
+  --ai-color: #4caf50;
+  --attachments-color: #ff9800;
+  --career-color: #2196f3;
+  --cs-color: #9c27b0;
+  --journal-color: #795548;
+  --personal-color: #db7758;
+  --projects-color: #27b44b;
+
+  /* Nested Folders */
+  --cse-412-color: #03a9f4;
+  --cse-417-color: #ffc107;
+  --fin-441-color: #8bc34a;
+  --fin-451-color: #ff5722;
+  --math-429-color: #607d8b;
+  --journal-entries-color: #9e9e9e;
+
+  /* Root Files */
+  --home-color: #3f51b5;
+  --infinity-note-color: #009688;
+  --media-list-color: #673ab7;
+  --obsidian-config-todo-color: #e91e63;
+  --goals-color: #ff9800;
+  --context-about-myself-color: #008ab4;
+
+  /* System Colors */
+  --default-text-color: #d0d0d0;
+  --highlight: #fff;
+  --shadow: #0b0c2c;
+}
+
+/* Light Theme Specific Properties */
+.theme-light {
+  --contrast-color: var(--shadow);
+  --default-text-color: var(--shadow);
+  --bg-contrast-amount: 70%;
+  --fg-contrast-amount: 30%;
+  --medium-contrast-amount: 60%;
+  --active-contrast-amount: 30%;
+}
+
+/* Dark Theme Specific Properties */
+.theme-dark {
+  --contrast-color: var(--highlight);
+  --bg-contrast-amount: 15%;
+  --fg-contrast-amount: 40%;
+  --medium-contrast-amount: 20%;
+  --active-contrast-amount: 10%;
+}
+
+/* All Folder Titles */
+.nav-folder-title {
+  font-weight: bold;
+  font-family: Sans-serif;
+  border-radius: 5px;
+}
+
+/* Narrower Padding on Desktop*/
+@media only screen and (min-width: 768px) {
+  .nav-file-title,
+  .nav-folder-title {
+    padding-top: 3px !important;
+    padding-right: 5px !important;
+    padding-bottom: 2px !important;
+    padding-left: 15px !important;
+  }
+}
+
+/* Remove indentation guides */
+.tree-item-children {
+  --nav-indentation-guide-color: transparent;
+}
+
+/*------------------------------------------------------------------------------
+                          MAIN FOLDER STYLING
+------------------------------------------------------------------------------*/
+
+/* 2025-spr Folder */
+.nav-folder-title[data-path="2025-spr"] {
+  color: var(--spr-2025-color);
+  --nav-item-color-hover: color-mix(
+    in srgb,
+    var(--spr-2025-color) var(--fg-contrast-amount),
+    var(--contrast-color)
+  );
+  --nav-item-background-hover: color-mix(
+    in srgb,
+    var(--spr-2025-color) var(--bg-contrast-amount),
+    transparent
+  );
+  --background-modifier-border-focus: color-mix(
+    in srgb,
+    var(--spr-2025-color) 40%,
+    transparent
+  );
+  --nav-collapse-icon-color: color-mix(
+    in srgb,
+    var(--spr-2025-color) 60%,
+    transparent
+  );
+}
+.nav-folder-title[data-path="2025-spr"]:hover {
+  --nav-collapse-icon-color: color-mix(
+    in srgb,
+    var(--spr-2025-color) 60%,
+    var(--contrast-color)
+  );
+}
+.tree-item-children .nav-folder:has(.nav-folder-title[data-path="2025-spr"]) {
+  --nav-indentation-guide-color: color-mix(
+    in srgb,
+    var(--spr-2025-color) var(--medium-contrast-amount),
+    transparent
+  );
+}
+.tree-item-children
+  .nav-folder:has(.nav-folder-title[data-path="2025-spr"])
+  .nav-file-title {
+  color: color-mix(
+    in srgb,
+    var(--spr-2025-color) var(--medium-contrast-amount),
+    var(--default-text-color)
+  );
+  --nav-item-background-hover: color-mix(
+    in srgb,
+    color-mix(in srgb, var(--spr-2025-color) 50%, var(--highlight))
+      var(--bg-contrast-amount),
+    transparent
+  );
+  --background-modifier-border-focus: color-mix(
+    in srgb,
+    var(--spr-2025-color) 40%,
+    transparent
+  );
+  --nav-item-background-active: color-mix(
+    in srgb,
+    var(--spr-2025-color) var(--active-contrast-amount),
+    transparent
+  );
+}
+
+/* AI Folder */
+.nav-folder-title[data-path="ai"] {
+  color: var(--ai-color);
+  --nav-item-color-hover: color-mix(
+    in srgb,
+    var(--ai-color) var(--fg-contrast-amount),
+    var(--contrast-color)
+  );
+  --nav-item-background-hover: color-mix(
+    in srgb,
+    var(--ai-color) var(--bg-contrast-amount),
+    transparent
+  );
+  --background-modifier-border-focus: color-mix(
+    in srgb,
+    var(--ai-color) 40%,
+    transparent
+  );
+  --nav-collapse-icon-color: color-mix(
+    in srgb,
+    var(--ai-color) 60%,
+    transparent
+  );
+}
+.nav-folder-title[data-path="ai"]:hover {
+  --nav-collapse-icon-color: color-mix(
+    in srgb,
+    var(--ai-color) 60%,
+    var(--contrast-color)
+  );
+}
+.tree-item-children .nav-folder:has(.nav-folder-title[data-path="ai"]) {
+  --nav-indentation-guide-color: color-mix(
+    in srgb,
+    var(--ai-color) var(--medium-contrast-amount),
+    transparent
+  );
+}
+.tree-item-children
+  .nav-folder:has(.nav-folder-title[data-path="ai"])
+  .nav-file-title {
+  color: color-mix(
+    in srgb,
+    var(--ai-color) var(--medium-contrast-amount),
+    var(--default-text-color)
+  );
+  --nav-item-background-hover: color-mix(
+    in srgb,
+    color-mix(in srgb, var(--ai-color) 50%, var(--highlight))
+      var(--bg-contrast-amount),
+    transparent
+  );
+  --background-modifier-border-focus: color-mix(
+    in srgb,
+    var(--ai-color) 40%,
+    transparent
+  );
+  --nav-item-background-active: color-mix(
+    in srgb,
+    var(--ai-color) var(--active-contrast-amount),
+    transparent
+  );
+}
+
+/* Attachments Folder */
+.nav-folder-title[data-path="attachments"] {
+  color: var(--attachments-color);
+  --nav-item-color-hover: color-mix(
+    in srgb,
+    var(--attachments-color) var(--fg-contrast-amount),
+    var(--contrast-color)
+  );
+  --nav-item-background-hover: color-mix(
+    in srgb,
+    var(--attachments-color) var(--bg-contrast-amount),
+    transparent
+  );
+  --background-modifier-border-focus: color-mix(
+    in srgb,
+    var(--attachments-color) 40%,
+    transparent
+  );
+  --nav-collapse-icon-color: color-mix(
+    in srgb,
+    var(--attachments-color) 60%,
+    transparent
+  );
+}
+.nav-folder-title[data-path="attachments"]:hover {
+  --nav-collapse-icon-color: color-mix(
+    in srgb,
+    var(--attachments-color) 60%,
+    var(--contrast-color)
+  );
+}
+
+/* Career Folder */
+.nav-folder-title[data-path="career"] {
+  color: var(--career-color);
+  --nav-item-color-hover: color-mix(
+    in srgb,
+    var(--career-color) var(--fg-contrast-amount),
+    var(--contrast-color)
+  );
+  --nav-item-background-hover: color-mix(
+    in srgb,
+    var(--career-color) var(--bg-contrast-amount),
+    transparent
+  );
+  --background-modifier-border-focus: color-mix(
+    in srgb,
+    var(--career-color) 40%,
+    transparent
+  );
+  --nav-collapse-icon-color: color-mix(
+    in srgb,
+    var(--career-color) 60%,
+    transparent
+  );
+}
+.nav-folder-title[data-path="career"]:hover {
+  --nav-collapse-icon-color: color-mix(
+    in srgb,
+    var(--career-color) 60%,
+    var(--contrast-color)
+  );
+}
+
+/* CS Folder */
+.nav-folder-title[data-path="cs"] {
+  color: var(--cs-color);
+  --nav-item-color-hover: color-mix(
+    in srgb,
+    var(--cs-color) var(--fg-contrast-amount),
+    var(--contrast-color)
+  );
+  --nav-item-background-hover: color-mix(
+    in srgb,
+    var(--cs-color) var(--bg-contrast-amount),
+    transparent
+  );
+  --background-modifier-border-focus: color-mix(
+    in srgb,
+    var(--cs-color) 40%,
+    transparent
+  );
+  --nav-collapse-icon-color: color-mix(
+    in srgb,
+    var(--cs-color) 60%,
+    transparent
+  );
+}
+.nav-folder-title[data-path="cs"]:hover {
+  --nav-collapse-icon-color: color-mix(
+    in srgb,
+    var(--cs-color) 60%,
+    var(--contrast-color)
+  );
+}
+
+/* Personal Folder */
+.nav-folder-title[data-path="personal"] {
+  color: var(--personal-color);
+  --nav-item-color-hover: color-mix(
+    in srgb,
+    var(--personal-color) var(--fg-contrast-amount),
+    var(--contrast-color)
+  );
+  --nav-item-background-hover: color-mix(
+    in srgb,
+    var(--personal-color) var(--bg-contrast-amount),
+    transparent
+  );
+  --background-modifier-border-focus: color-mix(
+    in srgb,
+    var(--personal-color) 40%,
+    transparent
+  );
+  --nav-collapse-icon-color: color-mix(
+    in srgb,
+    var(--personal-color) 60%,
+    transparent
+  );
+}
+.nav-folder-title[data-path="personal"]:hover {
+  --nav-collapse-icon-color: color-mix(
+    in srgb,
+    var(--personal-color) 60%,
+    var(--contrast-color)
+  );
+}
+
+/* Personal Folder */
+.nav-folder-title[data-path="projects"] {
+  color: var(--projects-color);
+  --nav-item-color-hover: color-mix(
+    in srgb,
+    var(--projects-color) var(--fg-contrast-amount),
+    var(--contrast-color)
+  );
+  --nav-item-background-hover: color-mix(
+    in srgb,
+    var(--projects-color) var(--bg-contrast-amount),
+    transparent
+  );
+  --background-modifier-border-focus: color-mix(
+    in srgb,
+    var(--projects-color) 40%,
+    transparent
+  );
+  --nav-collapse-icon-color: color-mix(
+    in srgb,
+    var(--projects-color) 60%,
+    transparent
+  );
+}
+.nav-folder-title[data-path="projects"]:hover {
+  --nav-collapse-icon-color: color-mix(
+    in srgb,
+    var(--projects-color) 60%,
+    var(--contrast-color)
+  );
+}
+
+/* Journal Folder */
+.nav-folder-title[data-path="journal"] {
+  color: var(--journal-color);
+  --nav-item-color-hover: color-mix(
+    in srgb,
+    var(--journal-color) var(--fg-contrast-amount),
+    var(--contrast-color)
+  );
+  --nav-item-background-hover: color-mix(
+    in srgb,
+    var(--journal-color) var(--bg-contrast-amount),
+    transparent
+  );
+  --background-modifier-border-focus: color-mix(
+    in srgb,
+    var(--journal-color) 40%,
+    transparent
+  );
+  --nav-collapse-icon-color: color-mix(
+    in srgb,
+    var(--journal-color) 60%,
+    transparent
+  );
+}
+.nav-folder-title[data-path="journal"]:hover {
+  --nav-collapse-icon-color: color-mix(
+    in srgb,
+    var(--journal-color) 60%,
+    var(--contrast-color)
+  );
+}
+
+/*------------------------------------------------------------------------------
+                          NESTED FOLDER STYLING
+------------------------------------------------------------------------------*/
+
+/* CSE-412 Folder */
+.nav-folder-title[data-path="2025-spr/cse-412"] {
+  color: var(--cse-412-color);
+  --nav-item-color-hover: color-mix(
+    in srgb,
+    var(--cse-412-color) var(--fg-contrast-amount),
+    var(--contrast-color)
+  );
+  --nav-item-background-hover: color-mix(
+    in srgb,
+    var(--cse-412-color) var(--bg-contrast-amount),
+    transparent
+  );
+  --background-modifier-border-focus: color-mix(
+    in srgb,
+    var(--cse-412-color) 40%,
+    transparent
+  );
+  --nav-collapse-icon-color: color-mix(
+    in srgb,
+    var(--cse-412-color) 60%,
+    transparent
+  );
+}
+
+/* CSE-417 Folder */
+.nav-folder-title[data-path="2025-spr/cse-417"] {
+  color: var(--cse-417-color);
+  --nav-item-color-hover: color-mix(
+    in srgb,
+    var(--cse-417-color) var(--fg-contrast-amount),
+    var(--contrast-color)
+  );
+  --nav-item-background-hover: color-mix(
+    in srgb,
+    var(--cse-417-color) var(--bg-contrast-amount),
+    transparent
+  );
+  --background-modifier-border-focus: color-mix(
+    in srgb,
+    var(--cse-417-color) 40%,
+    transparent
+  );
+  --nav-collapse-icon-color: color-mix(
+    in srgb,
+    var(--cse-417-color) 60%,
+    transparent
+  );
+}
+
+/* FIN-441 Folder */
+.nav-folder-title[data-path="2025-spr/fin-441"] {
+  color: var(--fin-441-color);
+  --nav-item-color-hover: color-mix(
+    in srgb,
+    var(--fin-441-color) var(--fg-contrast-amount),
+    var(--contrast-color)
+  );
+  --nav-item-background-hover: color-mix(
+    in srgb,
+    var(--fin-441-color) var(--bg-contrast-amount),
+    transparent
+  );
+  --background-modifier-border-focus: color-mix(
+    in srgb,
+    var(--fin-441-color) 40%,
+    transparent
+  );
+  --nav-collapse-icon-color: color-mix(
+    in srgb,
+    var(--fin-441-color) 60%,
+    transparent
+  );
+}
+
+/* FIN-451 Folder */
+.nav-folder-title[data-path="2025-spr/fin-451"] {
+  color: var(--fin-451-color);
+  --nav-item-color-hover: color-mix(
+    in srgb,
+    var(--fin-451-color) var(--fg-contrast-amount),
+    var(--contrast-color)
+  );
+  --nav-item-background-hover: color-mix(
+    in srgb,
+    var(--fin-451-color) var(--bg-contrast-amount),
+    transparent
+  );
+  --background-modifier-border-focus: color-mix(
+    in srgb,
+    var(--fin-451-color) 40%,
+    transparent
+  );
+  --nav-collapse-icon-color: color-mix(
+    in srgb,
+    var(--fin-451-color) 60%,
+    transparent
+  );
+}
+
+/* MATH-429 Folder */
+.nav-folder-title[data-path="2025-spr/math-429"] {
+  color: var(--math-429-color);
+  --nav-item-color-hover: color-mix(
+    in srgb,
+    var(--math-429-color) var(--fg-contrast-amount),
+    var(--contrast-color)
+  );
+  --nav-item-background-hover: color-mix(
+    in srgb,
+    var(--math-429-color) var(--bg-contrast-amount),
+    transparent
+  );
+  --background-modifier-border-focus: color-mix(
+    in srgb,
+    var(--math-429-color) 40%,
+    transparent
+  );
+  --nav-collapse-icon-color: color-mix(
+    in srgb,
+    var(--math-429-color) 60%,
+    transparent
+  );
+}
+
+/* Journal Entries Folder */
+.nav-folder-title[data-path="journal/journal-entries"] {
+  color: var(--journal-entries-color);
+  --nav-item-color-hover: color-mix(
+    in srgb,
+    var(--journal-entries-color) var(--fg-contrast-amount),
+    var(--contrast-color)
+  );
+  --nav-item-background-hover: color-mix(
+    in srgb,
+    var(--journal-entries-color) var(--bg-contrast-amount),
+    transparent
+  );
+  --background-modifier-border-focus: color-mix(
+    in srgb,
+    var(--journal-entries-color) 40%,
+    transparent
+  );
+  --nav-collapse-icon-color: color-mix(
+    in srgb,
+    var(--journal-entries-color) 60%,
+    transparent
+  );
+}
+
+/*------------------------------------------------------------------------------
+                          ROOT FILE STYLING
+------------------------------------------------------------------------------*/
+
+/* Home File */
+/* Home file styling */
+.nav-file-title[data-path$="home.md"] .nav-file-title-content,
+.nav-file-title[data-path="home"] .nav-file-title-content {
+  color: var(--home-color);
+  font-weight: bold;
+}
+
+.nav-file-title[data-path$="home.md"] [data-icon],
+.nav-file-title[data-path="home"] [data-icon] {
+  color: var(--home-color);
+}
+
+.nav-file-title[data-path$="home.md"],
+.nav-file-title[data-path="home"] {
+  --nav-item-color-hover: color-mix(
+    in srgb,
+    var(--home-color) var(--fg-contrast-amount),
+    var(--contrast-color)
+  );
+  --nav-item-background-hover: color-mix(
+    in srgb,
+    var(--home-color) var(--bg-contrast-amount),
+    transparent
+  );
+  --background-modifier-border-focus: color-mix(
+    in srgb,
+    var(--home-color) 40%,
+    transparent
+  );
+  --nav-item-background-active: color-mix(
+    in srgb,
+    var(--home-color) var(--active-contrast-amount),
+    transparent
+  );
+}
+
+/* Infinity Note File */
+/* Infinity Note file styling */
+.nav-file-title[data-path$="infinity-note.md"] .nav-file-title-content,
+.nav-file-title[data-path="infinity-note"] .nav-file-title-content {
+  color: var(--infinity-note-color);
+  font-weight: bold;
+}
+
+.nav-file-title[data-path$="infinity-note.md"] [data-icon],
+.nav-file-title[data-path="infinity-note"] [data-icon] {
+  color: var(--infinity-note-color);
+}
+
+.nav-file-title[data-path$="infinity-note.md"],
+.nav-file-title[data-path="infinity-note"] {
+  --nav-item-color-hover: color-mix(
+    in srgb,
+    var(--infinity-note-color) var(--fg-contrast-amount),
+    var(--contrast-color)
+  );
+  --nav-item-background-hover: color-mix(
+    in srgb,
+    var(--infinity-note-color) var(--bg-contrast-amount),
+    transparent
+  );
+  --background-modifier-border-focus: color-mix(
+    in srgb,
+    var(--infinity-note-color) 40%,
+    transparent
+  );
+  --nav-item-background-active: color-mix(
+    in srgb,
+    var(--infinity-note-color) var(--active-contrast-amount),
+    transparent
+  );
+}
+
+/* Media List File */
+.nav-file-title[data-path$="media-list.md"] .nav-file-title-content,
+.nav-file-title[data-path="media-list"] .nav-file-title-content {
+  color: var(--media-list-color);
+  font-weight: bold;
+}
+
+.nav-file-title[data-path$="media-list.md"] [data-icon],
+.nav-file-title[data-path="media-list"] [data-icon] {
+  color: var(--media-list-color);
+}
+
+.nav-file-title[data-path$="media-list.md"],
+.nav-file-title[data-path="media-list"] {
+  --nav-item-color-hover: color-mix(
+    in srgb,
+    var(--media-list-color) var(--fg-contrast-amount),
+    var(--contrast-color)
+  );
+  --nav-item-background-hover: color-mix(
+    in srgb,
+    var(--media-list-color) var(--bg-contrast-amount),
+    transparent
+  );
+  --background-modifier-border-focus: color-mix(
+    in srgb,
+    var(--media-list-color) 40%,
+    transparent
+  );
+  --nav-item-background-active: color-mix(
+    in srgb,
+    var(--media-list-color) var(--active-contrast-amount),
+    transparent
+  );
+}
+
+/* Obsidian Config Todo file styling */
+.nav-file-title[data-path$="obsidian-config-todo.md"] .nav-file-title-content,
+.nav-file-title[data-path="obsidian-config-todo"] .nav-file-title-content {
+  color: var(--obsidian-config-todo-color);
+  font-weight: bold;
+}
+
+.nav-file-title[data-path$="obsidian-config-todo.md"] [data-icon],
+.nav-file-title[data-path="obsidian-config-todo"] [data-icon],
+.nav-file-title[data-path$="obsidian-config-todo.md"] [data-icon="LiListTodo"],
+.nav-file-title[data-path="obsidian-config-todo"] [data-icon="LiListTodo"] {
+  color: var(--obsidian-config-todo-color);
+}
+
+.nav-file-title[data-path$="obsidian-config-todo.md"],
+.nav-file-title[data-path="obsidian-config-todo"] {
+  --nav-item-color-hover: color-mix(
+    in srgb,
+    var(--obsidian-config-todo-color) var(--fg-contrast-amount),
+    var(--contrast-color)
+  );
+  --nav-item-background-hover: color-mix(
+    in srgb,
+    var(--obsidian-config-todo-color) var(--bg-contrast-amount),
+    transparent
+  );
+  --background-modifier-border-focus: color-mix(
+    in srgb,
+    var(--obsidian-config-todo-color) 40%,
+    transparent
+  );
+  --nav-item-background-active: color-mix(
+    in srgb,
+    var(--obsidian-config-todo-color) var(--active-contrast-amount),
+    transparent
+  );
+}
+
+/* Goals file styling */
+.nav-file-title[data-path$="goals.md"] .nav-file-title-content,
+.nav-file-title[data-path="goals"] .nav-file-title-content {
+  color: var(--goals-color);
+  font-weight: bold;
+}
+
+.nav-file-title[data-path$="goals.md"] [data-icon],
+.nav-file-title[data-path="goals"] [data-icon] {
+  color: var(--goals-color);
+}
+
+.nav-file-title[data-path$="goals.md"],
+.nav-file-title[data-path="goals"] {
+  --nav-item-color-hover: color-mix(
+    in srgb,
+    var(--goals-color) var(--fg-contrast-amount),
+    var(--contrast-color)
+  );
+  --nav-item-background-hover: color-mix(
+    in srgb,
+    var(--goals-color) var(--bg-contrast-amount),
+    transparent
+  );
+  --background-modifier-border-focus: color-mix(
+    in srgb,
+    var(--goals-color) 40%,
+    transparent
+  );
+  --nav-item-background-active: color-mix(
+    in srgb,
+    var(--goals-color) var(--active-contrast-amount),
+    transparent
+  );
+}
+
+/* Context About Myself file styling */
+.nav-file-title[data-path$="context-about-myself.md"] .nav-file-title-content,
+.nav-file-title[data-path="context-about-myself"] .nav-file-title-content {
+  color: var(--context-about-myself-color);
+  font-weight: bold;
+}
+
+.nav-file-title[data-path$="context-about-myself.md"] [data-icon],
+.nav-file-title[data-path="context-about-myself"] [data-icon] {
+  color: var(--context-about-myself-color);
+}
+
+.nav-file-title[data-path$="context-about-myself.md"],
+.nav-file-title[data-path="context-about-myself"] {
+  --nav-item-color-hover: color-mix(
+    in srgb,
+    var(--context-about-myself-color) var(--fg-contrast-amount),
+    var(--contrast-color)
+  );
+  --nav-item-background-hover: color-mix(
+    in srgb,
+    var(--context-about-myself-color) var(--bg-contrast-amount),
+    transparent
+  );
+  --background-modifier-border-focus: color-mix(
+    in srgb,
+    var(--context-about-myself-color) 40%,
+    transparent
+  );
+  --nav-item-background-active: color-mix(
+    in srgb,
+    var(--context-about-myself-color) var(--active-contrast-amount),
+    transparent
+  );
+}

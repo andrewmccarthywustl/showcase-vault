@@ -1,0 +1,7 @@
+body {
+  --metadata-display-reading: none;
+}
+
+.document--no-title .inline-title {
+  display: none;
+}

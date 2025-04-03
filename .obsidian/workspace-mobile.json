@@ -1,0 +1,218 @@
+{
+  "main": {
+    "id": "5324373015726ba8",
+    "type": "split",
+    "children": [
+      {
+        "id": "4509724f8bf84da7",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e7a7b303c61786dc",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "home.md",
+                "mode": "preview",
+                "source": true,
+                "backlinks": false
+              },
+              "pinned": true,
+              "icon": "lucide-file",
+              "title": "home"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "375c9a47106c80d5",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "4833ae2884a6561a",
+        "type": "leaf",
+        "state": {
+          "type": "file-explorer",
+          "state": {
+            "sortOrder": "alphabetical",
+            "autoReveal": false
+          },
+          "icon": "lucide-folder-closed",
+          "title": "Files"
+        }
+      },
+      {
+        "id": "3b2de14e583025bc",
+        "type": "leaf",
+        "state": {
+          "type": "search",
+          "state": {
+            "query": "",
+            "matchingCase": false,
+            "explainSearch": false,
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical"
+          },
+          "icon": "lucide-search",
+          "title": "Search"
+        }
+      },
+      {
+        "id": "226f7ac89b162372",
+        "type": "leaf",
+        "state": {
+          "type": "tag",
+          "state": {
+            "sortOrder": "frequency",
+            "useHierarchy": true,
+            "showSearch": false,
+            "searchQuery": ""
+          },
+          "icon": "lucide-tags",
+          "title": "Tags"
+        }
+      },
+      {
+        "id": "89ae58b4a0a22f4d",
+        "type": "leaf",
+        "state": {
+          "type": "bookmarks",
+          "state": {},
+          "icon": "lucide-bookmark",
+          "title": "Bookmarks"
+        }
+      }
+    ],
+    "currentTab": 0
+  },
+  "right": {
+    "id": "232a86978e0200b8",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "e522a9c35f24768d",
+        "type": "leaf",
+        "state": {
+          "type": "backlink",
+          "state": {
+            "file": "2025-spr/math-429/lecture-notes/2025-03-30-eigen-values.md",
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical",
+            "showSearch": false,
+            "searchQuery": "",
+            "backlinkCollapsed": false,
+            "unlinkedCollapsed": true
+          },
+          "icon": "links-coming-in",
+          "title": "Backlinks"
+        }
+      },
+      {
+        "id": "c33e8b7a58212495",
+        "type": "leaf",
+        "state": {
+          "type": "outgoing-link",
+          "state": {
+            "file": "home.md",
+            "linksCollapsed": false,
+            "unlinkedCollapsed": true
+          },
+          "icon": "links-going-out",
+          "title": "Outgoing links"
+        }
+      },
+      {
+        "id": "82936eee4a1175db",
+        "type": "leaf",
+        "state": {
+          "type": "outline",
+          "state": {
+            "file": "home.md",
+            "followCursor": false,
+            "showSearch": false,
+            "searchQuery": ""
+          },
+          "icon": "lucide-list",
+          "title": "Outline"
+        }
+      },
+      {
+        "id": "c8bcbc9a97452271",
+        "type": "leaf",
+        "state": {
+          "type": "calendar",
+          "state": {},
+          "icon": "lucide-file",
+          "title": "Plugin no longer active"
+        }
+      }
+    ],
+    "currentTab": 0
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "workspaces:Manage workspace layouts": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "homepage:Open homepage": false
+    }
+  },
+  "active": "e7a7b303c61786dc",
+  "lastOpenFiles": [
+    "2025-spr/cse-417/homework/hw-1-questions.pdf",
+    "2025-spr/cse-412/lecture-notes/04-uninformed-search-2.pdf",
+    "2025-spr/cse-417/lecture-notes/18-back-propagation.pdf",
+    "2025-spr/cse-412/lecture-notes/05-informed-search.pdf",
+    "2025-spr/cse-417/homework/hw-2-questions.pdf",
+    "2025-spr/cse-412/lecture-notes/01-intro.pdf",
+    "2025-spr/cse-412/lecture-notes/07-adversarial.pdf",
+    "2025-spr/cse-417/lecture-notes/13-regularization.pdf",
+    "2025-spr/cse-412/lecture-notes/10-constraint_satisfaction_problems-1.pdf",
+    "2025-spr/cse-412/lecture-notes/13-conditional-probability.pdf",
+    "2025-spr/cse-412/lecture-notes/17-mdp-search-trees.pdf",
+    "attachments/notebook-lm-icon.svg",
+    "attachments/ai-studio-icon.svg",
+    "home.md",
+    "infinity-note.md",
+    "goals.md",
+    "media-list.md",
+    "cs/table-of-contents-cs.md",
+    "2025-spr/cse-412/table-of-contents-cse-412.md",
+    "2025-spr/cse-417/table-of-contents-cse-417.md",
+    "ai/table-of-contents-ai.md",
+    "ai/prompts/image-gen-prompts.md",
+    "2025-spr/fin-451/table-of-contents-fin-451.md",
+    "2025-spr/math-429/table-of-contents-math-429.md",
+    "cs/cs-courses/command-line-course.md",
+    "journal/journal-entries/wip-2025-03-31-.md",
+    "journal/journal-entries/wip-2025-03-28-ai-and-unknown-unknowns.md",
+    "attachments/computer-science-icon.svg",
+    "attachments/cse-412-icon.svg",
+    "attachments/fin-441-icon.svg",
+    "attachments/cse-417-icon.svg",
+    "attachments/ai-icon.svg",
+    "attachments/media-icon.svg",
+    "attachments/fin-451-icon.svg",
+    "attachments/infinity-note-icon.svg",
+    "table-of-contents-cs.md",
+    "2025-spr/fin-441/table-of-contents-fin-441.md",
+    "career/what do I want to do?.md",
+    "journal/table-of-contents-journal.md",
+    "2025-spr/math-429/lecture-notes/2025-03-30-eigen-values.md",
+    "2025-spr/math-429/lecture-notes/2025-4-29-matrices.md",
+    "obsidian-config-todo.md",
+    "obsidian-config.md",
+    "Homepage.md"
+  ]
+}
