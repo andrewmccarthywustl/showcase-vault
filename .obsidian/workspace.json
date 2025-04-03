@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "e55fd34749754fa2",
+        "id": "4509724f8bf84da7",
         "type": "tabs",
         "children": [
           {
-            "id": "d98590222d32af87",
+            "id": "e7a7b303c61786dc",
             "type": "leaf",
             "pinned": true,
             "state": {
@@ -172,52 +172,6 @@
       "homepage:Open homepage": false
     }
   },
-  "active": "d98590222d32af87",
-  "lastOpenFiles": [
-    "semester/class/table-of-contents-class.md",
-    "home.md",
-    "infinity-note.md",
-    "attachments/personal-website-icon.svg",
-    "attachments/fin-451-icon.svg",
-    "attachments/fin-441-icon.svg",
-    "attachments/cse-412-icon.svg",
-    "attachments/cse-417-icon.svg",
-    "goals.md",
-    "journal/table-of-contents-journal.md",
-    "media-list.md",
-    "obsidian-config-todo.md",
-    "journal/journal-entries/wip-2025-03-31-.md",
-    "journal/journal-entries/2025-03-31-name-of-entry.md",
-    "semester/class/lecture-notes/lecture-note-example.pdf",
-    "attachments/class-icon.svg",
-    "attachments/ai-icon.svg",
-    "projects/table-of-contents-projects.md",
-    "attachments/chat-gpt-icon.svg",
-    "attachments/SVG/chat-gpt-icon.svg",
-    "semester/math-429/lecture-notes/test.md",
-    "attachments/SVG/Asset 66.svg",
-    "attachments/SVG",
-    "semester/math-429/lecture-notes/2025-03-31-inequalities-orthonormality.pdf",
-    "semester/math-429/homework/hw-3.pdf",
-    "semester/math-429/homework/hw-2.pdf",
-    "semester/math-429/homework/hw-1.pdf",
-    "projects/mcp/mcp-to-do.md",
-    "projects/mcp/mcp-resources.md",
-    "projects/mcp/mcp-project-description.md",
-    "2025-spr/cse-412/table-of-contents-cse-412.md",
-    "2025-spr/cse-412/lecture-notes/17-mdp-search-trees.pdf",
-    "ai/prompts/media-prompts.md",
-    "ai/prompts/image-gen-prompts.md",
-    "ai/table-of-contents-ai.md",
-    "context-about-myself.md",
-    "semester/math-429/table-of-contents-math-429.md",
-    "semester/math-429/homework/hw-8.pdf",
-    "2025-spr/cse-417/table-of-contents-cse-417.md",
-    "2025-spr/math-429/homework/hw8.pdf",
-    "semester/math-429/homework/hw-7.pdf",
-    "semester/fin-451/table-of-contents-fin-451.md",
-    "semester/fin-441/table-of-contents-fin-441.md",
-    "cs/table-of-contents-cs.md",
-    "cs/cs-courses/command-line-course.md"
-  ]
+  "active": "e7a7b303c61786dc",
+  "lastOpenFiles": []
 }
